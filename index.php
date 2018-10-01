@@ -2,12 +2,12 @@
 
 require_once("config.php");
 
-//------------------------------------Carrega um usuario:
+/*------------------------------------Carrega um usuario:
 $root = new usuario();
 
 $root->loadById(24);
 
-echo $root; 
+echo $root; */
 /*-----------------------------------Carrega uma lista de usuarios:
 $lista = Usuario::getList();
 
@@ -43,4 +43,15 @@ $usuario->loadById(3);
 $usuario->update("Bolacha", "1234");
 
 echo $usuario; */ 
+
+//--------------------------------------------Delete:
+
+$usuario = new Usuario();
+
+$usuario->loadById(23);
+
+$usuario->delete();
+
+echo $usuario;
+
 ?>
